@@ -15,9 +15,12 @@
         <div class="py-4">
             <h2 class="text-center">Registration</h2>
             <div class="container text-center">
-                <form action="" method="post">
+                <form action="../database/register.php" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <input type="text" class="form-control w-50 m-auto" name="user-name" placeholder="Enter Your Voters Name" required="required">
+                        <input type="text" class="form-control w-50 m-auto" name="username" placeholder="Enter Your Voters Name" required="required">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control w-50 m-auto" name="email" placeholder="Enter Your Email" required="required">
                     </div>
                     <div class="mb-3">
                         <input type="Date" class="form-control w-50 m-auto" name="DOB" required="required">
@@ -32,9 +35,10 @@
                         <input type="file" class="form-control w-50 m-auto" name="photo">
                     </div>
                     <div class="mb-3 ">
+                        <label for="">Are You a Voter Or A Presidential Candidate?</label>
                         <select class="form-select w-50 m-auto" name="std" id="">
-                            <option selected>Are You A Voter Or A Candidate?</option>
-                            <option class="" value="presidential-candidate" value="p-candidate">presidential candidate</option>
+                            <option selected></option>
+                            <option class="" value="p-candidate">presidential candidate</option>
                             <option class="" value="voter">Voter</option>
                         </select>
                     </div>

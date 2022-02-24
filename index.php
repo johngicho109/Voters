@@ -15,17 +15,21 @@
         <div class="">
             <h2 class="text-center">Login</h2>
             <div class="container text-center">
-                <form action="" method="post">
+                <form action="./partials/login.php" method="post">
                     <div class="mb-3">
                         <input type="text" class="form-control w-50 m-auto" name="user-name" placeholder="Enter Your Voters Name" required="required">
                     </div>
                     <div class="mb-3">
+                        <input type="email" class="form-control w-50 m-auto" name="user-name" placeholder="Enter Your Email" required="required">
+                    </div>
+                    <div class="mb-3">
                         <input type="Password" class="form-control w-50 m-auto" name="password" placeholder="Enter Your Password" required="required">
                     </div>
-                    
                     <div class="mb-3 ">
+                        <label for="">Are You a Voter Or A Presidential Candidate?</label>
                         <select class="form-select w-50 m-auto" name="std" id="">
-                            <option class="" value="presidential-candidate">presidential candidate</option>
+                            <option selected></option>
+                            <option class="" value="p-candidate">presidential candidate</option>
                             <option class="" value="Voter">Voter</option>
                         </select>
                     </div>
