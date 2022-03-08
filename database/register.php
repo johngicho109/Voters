@@ -24,7 +24,7 @@ if($password != $cpassword){
         echo "<script>
         alert('Registration Successfull');
         </script>";
-        header("Location: ../partials/registration.php");
+        header("Location: login.php");
     }
 }
 ?>

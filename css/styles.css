@@ -1,0 +1,242 @@
+/* font-family: 'Roboto Mono', monospace; */
+/* font-family: 'Caveat', cursive; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* ------------------------General styles----------------------------- */
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    scroll-behavior: smooth;
+}
+/* ------------------------General styles----------------------------- */
+
+/* ----------------------------Header section styles-------------------------- */
+#nav-section{
+    background-color: grey;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-brand{
+    margin:0.6em 0 0.6em 0.6em;
+    height: 70px;
+}
+nav div ul{
+    display: flex;
+    justify-content: center;
+}
+nav div ul li{
+    padding: 20px;
+    
+}
+nav div ul li a{
+    color: cyan;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+nav div ul li a:hover{
+    color: white;
+}
+nav div ul li:hover{
+    background-color: crimson;
+    border-radius: 10px;
+    
+}
+#intro-section{
+    background-image: url("../assets/backgrounds/h_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#intro-section div:nth-child(2){
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+#intro-section div:nth-child(2) h1{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 2.9em;
+}
+#intro-section div:nth-child(2) h2{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+#intro-section div p{
+    font-family: 'Caveat', cursive;
+    font-weight: 300;
+    font-size: 1.6em;
+}
+#mouse-click-icon{
+    position: absolute;
+    bottom: 0;
+}
+/* -----------------------End Header section styles-------------------------- */
+
+/* -------------------------About us styles-------------------------------- */
+#about-section{
+    text-align: center;
+    color: rgb(7, 3, 3);
+    margin-top: 20px;
+    padding: 10px;
+}
+#about-section h2{
+    font-family: 'Roboto Mono', monospace; 
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#about-section p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+/* -------------------------End About us styles------------------------------ */
+
+/* --------------------------services styles--------------------------------- */
+#services-section{
+    height: 40vh;
+    background-image: url(../assets/backgrounds/s_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services-section div{
+    text-align: center;
+}
+#services-section div h2{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+#services-section div p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+/* -------------------------End services styles------------------------------ */
+
+/* -------------------What we do styles----------------------------------- */
+#do-section{
+    margin-top: 20px;
+}
+#do-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+#do-section>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#do-section img{
+    height: 50px;
+    width: auto;
+}
+#do-section h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+#do-section p{
+    max-width: 24rem;
+    
+}
+#design-icon:hover,#development-icon:hover,#product-icon:hover{
+    cursor: pointer;
+}
+/* -------------------End What we do styles----------------------------------- */
+
+/* ------------------Potfolio styles section-------------------------------- */
+#portfolio-section{
+    margin-top: 3em;
+    padding: 0 100px 0 100px;
+}
+#portfolio-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+#portfolio-section img{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* ------------------End Potfolio styles section------------------------------ */
+
+/* -------------------Contact us styles---------------------------------- */
+#contact-section{
+    background-image: url(../assets/backgrounds/c_image.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70vh;
+}
+#contact-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+#contact-section form{
+    padding: 4em;
+}
+/* -------------------End Contact us styles---------------------------------- */
+
+/* ---------------footer styles section---------------------------------- */
+#social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#copyright{
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+#copyright h4,#copyright h5{
+    font-size: 0.8em;
+    font-weight: 700;
+}
+/* ---------------End footer styles section------------------------------- */
+/* ----------------------js---------------------- */
+#do-section p{
+    display: none;
+}
+
+.portFolio-hover{
+    color: white;
+    opacity: 0.9;
+    cursor: pointer
+}
+.portfolio-items>div>img:hover{
+    color: white;
+    opacity: 0.4;
+    cursor: pointer
+}
+/* ----------------------End js---------------------- */
