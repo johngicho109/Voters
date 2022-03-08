@@ -1,4 +1,4 @@
-# Delani Studio
+# Voters Studio
 #### This site is a one page website that mainly forcus on the frontEnd as well as user logic , Monday,26, July, 2021
 #### By **John Gicho**
 ## Description
@@ -10,6 +10,8 @@ CSS rules style the site to make it eye catchy and more appealing. The rules alt
 Twiter bootsrap which is a frontend framework that includes pre backed CSS rules is also included in the project. The rules are invocked when appropriate classes are applied on the HTML code.
 
 Vanilla javascript is also used in the project to store variables entered by the user as well store elements which are later used in the logic. Alerts as well as pop up messages are invocked when user interact with elements in the page. Jquery javascript library is used to enhance user experience of clicking certain items and then displays hidden html elements on click.
+
+The SPA is intertwinned with a voters application that enable user to register and login to their account after which they are able to vote.
 
 # Setup/Installation Requirements
 * HTML
