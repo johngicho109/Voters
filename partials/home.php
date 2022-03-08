@@ -34,6 +34,11 @@ if ($_SESSION["status"] == 1) {
             list-style: none;
             margin-right: 10%;
         }
+
+        #logo-img {
+            height: 50px;
+            width: auto;
+        }
     </style>
 </head>
 
@@ -41,7 +46,7 @@ if ($_SESSION["status"] == 1) {
     <!-- ----------------------Nav section------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: grey;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../partials/home.php">Voters</a>
+            <a class="navbar-brand" href="../partials/home.php"><img id="logo-img" src="../assets/logo/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -77,13 +82,13 @@ if ($_SESSION["status"] == 1) {
         <a></a>
         <h1>Voting System</h1>
         <div class="row my-5">
-            <div class="col-7" >
+            <div class="col-7">
                 <?php
                 if (isset($_SESSION["p-candidates"])) {
                     $candidates = $_SESSION["p-candidates"];
                     for ($i = 0; $i < count($candidates); $i++) {
                 ?>
-                        <div class="row" >
+                        <div class="row">
                             <div class="col-4">
                                 <img src="../uploads/<?php echo $candidates[$i]['photo'] ?>" alt="image">
                             </div>
@@ -138,8 +143,8 @@ if ($_SESSION["status"] == 1) {
     <!-- End Javascript CDN link -->
 </body>
 <!-- -------------------Footer section---------------------------- -->
-<footer class="container-fluid" style="text-align: center;">
-    <section id="copyright" style="background-color: crimson;">
+<footer class="container-fluid" style="text-align: center; width:100%;background-color: grey;">
+    <section id="copyright">
         <h4>Voters studio</h4>
         <h5>&copy;2022</h5>
     </section>

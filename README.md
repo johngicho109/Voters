@@ -17,6 +17,8 @@ Vanilla javascript is also used in the project to store variables entered by the
 * Bootsrap v5
 * vanilla javascript
 * jquery library
+* PHP
+* MYSQL
 ## Known Bugs
 No known bugs at the momment.
 ## Technologies Used
